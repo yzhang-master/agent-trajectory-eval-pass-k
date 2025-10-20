@@ -101,7 +101,8 @@ def pass_k_moments(successes: int, trials: int, k: int) -> tuple[float, float]:
             mass *= (1 - probability) ** (trials - observed_successes)
         estimate_at_observation = pass_k(observed_successes, trials, k)
         second_moment += mass * estimate_at_observation**2
-    return estimate, max(0.0, second_moment - estimate**2)
+    expected_under_binomial = probability**k
+    return estimate, max(0.0, second_moment - expected_under_binomial**2)
 
 
 @dataclass(frozen=True)
