@@ -1,0 +1,338 @@
+{
+  "timestamp": "2026-11-14T16:20:17.227869+01:00",
+  "definition": "pass^k estimates probability that all k independent trajectories succeed",
+  "deterministic": true,
+  "external_api_calls": 0,
+  "agents": [
+    {
+      "agent": "perfect",
+      "seed": 2026,
+      "repetitions": 32,
+      "tool_calls": {
+        "true_positives": 192,
+        "expected_calls": 192,
+        "actual_calls": 192,
+        "exact_argument_matches": 192,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "argument_exact_match": 1.0,
+        "trajectory_success": true
+      },
+      "reliability": {
+        "k": 3,
+        "tasks": 4,
+        "mean_pass_k": 1.0,
+        "variance_of_mean": 0.0,
+        "standard_error": 0.0,
+        "ci95_low": 1.0,
+        "ci95_high": 1.0,
+        "between_task_variance": 0.0
+      },
+      "tasks": [
+        {
+          "task_id": "weather",
+          "successes": 32,
+          "trials": 32,
+          "pass_k": 1.0,
+          "pass_k_variance": 0.0,
+          "tool_calls": {
+            "true_positives": 32,
+            "expected_calls": 32,
+            "actual_calls": 32,
+            "exact_argument_matches": 32,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "argument_exact_match": 1.0,
+            "trajectory_success": true
+          }
+        },
+        {
+          "task_id": "stock",
+          "successes": 32,
+          "trials": 32,
+          "pass_k": 1.0,
+          "pass_k_variance": 0.0,
+          "tool_calls": {
+            "true_positives": 64,
+            "expected_calls": 64,
+            "actual_calls": 64,
+            "exact_argument_matches": 64,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "argument_exact_match": 1.0,
+            "trajectory_success": true
+          }
+        },
+        {
+          "task_id": "duplicate-tool",
+          "successes": 32,
+          "trials": 32,
+          "pass_k": 1.0,
+          "pass_k_variance": 0.0,
+          "tool_calls": {
+            "true_positives": 64,
+            "expected_calls": 64,
+            "actual_calls": 64,
+            "exact_argument_matches": 64,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "argument_exact_match": 1.0,
+            "trajectory_success": true
+          }
+        },
+        {
+          "task_id": "search",
+          "successes": 32,
+          "trials": 32,
+          "pass_k": 1.0,
+          "pass_k_variance": 0.0,
+          "tool_calls": {
+            "true_positives": 32,
+            "expected_calls": 32,
+            "actual_calls": 32,
+            "exact_argument_matches": 32,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "argument_exact_match": 1.0,
+            "trajectory_success": true
+          }
+        }
+      ],
+      "pass_1_summary": {
+        "k": 1,
+        "tasks": 4,
+        "mean_pass_k": 1.0,
+        "variance_of_mean": 0.0,
+        "standard_error": 0.0,
+        "ci95_low": 1.0,
+        "ci95_high": 1.0,
+        "between_task_variance": 0.0
+      }
+    },
+    {
+      "agent": "mixed",
+      "seed": 2026,
+      "repetitions": 32,
+      "tool_calls": {
+        "true_positives": 171,
+        "expected_calls": 192,
+        "actual_calls": 191,
+        "exact_argument_matches": 157,
+        "precision": 0.8952879581151832,
+        "recall": 0.890625,
+        "f1": 0.8929503916449085,
+        "argument_exact_match": 0.9181286549707602,
+        "trajectory_success": false
+      },
+      "reliability": {
+        "k": 3,
+        "tasks": 4,
+        "mean_pass_k": 0.4100302419354839,
+        "variance_of_mean": 0.001452711589269213,
+        "standard_error": 0.03811445381045376,
+        "ci95_low": 0.3353259124669945,
+        "ci95_high": 0.48473457140397325,
+        "between_task_variance": 0.203760036610085
+      },
+      "tasks": [
+        {
+          "task_id": "weather",
+          "successes": 32,
+          "trials": 32,
+          "pass_k": 1.0,
+          "pass_k_variance": 0.0,
+          "tool_calls": {
+            "true_positives": 32,
+            "expected_calls": 32,
+            "actual_calls": 32,
+            "exact_argument_matches": 32,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "argument_exact_match": 1.0,
+            "trajectory_success": true
+          }
+        },
+        {
+          "task_id": "stock",
+          "successes": 26,
+          "trials": 32,
+          "pass_k": 0.5241935483870968,
+          "pass_k_variance": 0.018951572405715156,
+          "tool_calls": {
+            "true_positives": 61,
+            "expected_calls": 64,
+            "actual_calls": 63,
+            "exact_argument_matches": 59,
+            "precision": 0.9682539682539683,
+            "recall": 0.953125,
+            "f1": 0.9606299212598425,
+            "argument_exact_match": 0.9672131147540983,
+            "trajectory_success": false
+          }
+        },
+        {
+          "task_id": "duplicate-tool",
+          "successes": 15,
+          "trials": 32,
+          "pass_k": 0.09173387096774194,
+          "pass_k_variance": 0.003631766688364046,
+          "tool_calls": {
+            "true_positives": 57,
+            "expected_calls": 64,
+            "actual_calls": 65,
+            "exact_argument_matches": 51,
+            "precision": 0.8769230769230769,
+            "recall": 0.890625,
+            "f1": 0.883720930232558,
+            "argument_exact_match": 0.8947368421052632,
+            "trajectory_success": false
+          }
+        },
+        {
+          "task_id": "search",
+          "successes": 10,
+          "trials": 32,
+          "pass_k": 0.024193548387096774,
+          "pass_k_variance": 0.0006600463342282083,
+          "tool_calls": {
+            "true_positives": 21,
+            "expected_calls": 32,
+            "actual_calls": 31,
+            "exact_argument_matches": 15,
+            "precision": 0.6774193548387096,
+            "recall": 0.65625,
+            "f1": 0.6666666666666667,
+            "argument_exact_match": 0.7142857142857143,
+            "trajectory_success": false
+          }
+        }
+      ],
+      "pass_1_summary": {
+        "k": 1,
+        "tasks": 4,
+        "mean_pass_k": 0.6484375,
+        "variance_of_mean": 0.0012035369873046944,
+        "standard_error": 0.03469203060221028,
+        "ci95_low": 0.5804411200196679,
+        "ci95_high": 0.7164338799803321,
+        "between_task_variance": 0.09855143229166667
+      }
+    },
+    {
+      "agent": "weak",
+      "seed": 2026,
+      "repetitions": 32,
+      "tool_calls": {
+        "true_positives": 151,
+        "expected_calls": 192,
+        "actual_calls": 193,
+        "exact_argument_matches": 126,
+        "precision": 0.7823834196891192,
+        "recall": 0.7864583333333334,
+        "f1": 0.7844155844155843,
+        "argument_exact_match": 0.8344370860927153,
+        "trajectory_success": false
+      },
+      "reliability": {
+        "k": 3,
+        "tasks": 4,
+        "mean_pass_k": 0.04460685483870967,
+        "variance_of_mean": 0.00043959889195731755,
+        "standard_error": 0.020966613745603213,
+        "ci95_low": 0.003512291897327373,
+        "ci95_high": 0.08570141778009197,
+        "between_task_variance": 0.00399186435028616
+      },
+      "tasks": [
+        {
+          "task_id": "weather",
+          "successes": 17,
+          "trials": 32,
+          "pass_k": 0.13709677419354838,
+          "pass_k_variance": 0.0058993256572003085,
+          "tool_calls": {
+            "true_positives": 25,
+            "expected_calls": 32,
+            "actual_calls": 30,
+            "exact_argument_matches": 19,
+            "precision": 0.8333333333333334,
+            "recall": 0.78125,
+            "f1": 0.8064516129032259,
+            "argument_exact_match": 0.76,
+            "trajectory_success": false
+          }
+        },
+        {
+          "task_id": "stock",
+          "successes": 11,
+          "trials": 32,
+          "pass_k": 0.03326612903225806,
+          "pass_k_variance": 0.0009973069153455727,
+          "tool_calls": {
+            "true_positives": 55,
+            "expected_calls": 64,
+            "actual_calls": 63,
+            "exact_argument_matches": 47,
+            "precision": 0.873015873015873,
+            "recall": 0.859375,
+            "f1": 0.8661417322834646,
+            "argument_exact_match": 0.8545454545454545,
+            "trajectory_success": false
+          }
+        },
+        {
+          "task_id": "duplicate-tool",
+          "successes": 6,
+          "trials": 32,
+          "pass_k": 0.004032258064516129,
+          "pass_k_variance": 6.847484938559995e-05,
+          "tool_calls": {
+            "true_positives": 50,
+            "expected_calls": 64,
+            "actual_calls": 66,
+            "exact_argument_matches": 47,
+            "precision": 0.7575757575757576,
+            "recall": 0.78125,
+            "f1": 0.7692307692307692,
+            "argument_exact_match": 0.94,
+            "trajectory_success": false
+          }
+        },
+        {
+          "task_id": "search",
+          "successes": 6,
+          "trials": 32,
+          "pass_k": 0.004032258064516129,
+          "pass_k_variance": 6.847484938559995e-05,
+          "tool_calls": {
+            "true_positives": 21,
+            "expected_calls": 32,
+            "actual_calls": 34,
+            "exact_argument_matches": 13,
+            "precision": 0.6176470588235294,
+            "recall": 0.65625,
+            "f1": 0.6363636363636364,
+            "argument_exact_match": 0.6190476190476191,
+            "trajectory_success": false
+          }
+        }
+      ],
+      "pass_1_summary": {
+        "k": 1,
+        "tasks": 4,
+        "mean_pass_k": 0.3125,
+        "variance_of_mean": 0.0015220642089843698,
+        "standard_error": 0.03901364131921513,
+        "ci95_low": 0.23603326301433836,
+        "ci95_high": 0.38896673698566164,
+        "between_task_variance": 0.026692708333333332
+      }
+    }
+  ]
+}
